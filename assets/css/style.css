@@ -25,7 +25,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background: url("assets/web-overlay.png") no-repeat;
+  background: url("../web-overlay.png") no-repeat;
   background-size: cover;
   opacity: 0.08;
   z-index: 0;

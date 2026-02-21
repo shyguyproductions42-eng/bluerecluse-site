@@ -1,10 +1,12 @@
 /* ===== Base Reset ===== */
 body {
-    margin: 0;
+ body {
     font-family: Arial, sans-serif;
-    background: #0b0f1a;
-    color: #e0e1dd;
-    width: 100%;
+    background: radial-gradient(circle at top, #0b1225, #050914);
+    color: #ffffff;
+    font-size: 20px;   /* Increase base font */
+    line-height: 1.6;
+}
 }
 
 /* ===== Hero Section ===== */

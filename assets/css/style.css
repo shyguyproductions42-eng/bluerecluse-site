@@ -134,7 +134,7 @@ body::before {
     font-weight: bold;
     text-decoration: none;
     color: white;
-    background: #5865F2;
+    background: #1f4fff;
     border-radius: 6px;
     transition: 0.3s ease;
     box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);

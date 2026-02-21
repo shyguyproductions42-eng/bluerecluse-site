@@ -1,6 +1,9 @@
 const rosterGrid = document.getElementById("roster-grid");
 
-fetch("https://raider.io/api/v1/guilds/profile?region=us&realm=whisperwind&name=blue-recluse&fields=members")
+const apiURL = "https://raider.io/api/v1/guilds/profile?region=us&realm=whisperwind&name=blue-recluse&fields=members";
+const proxyURL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(apiURL);
+
+fetch(proxyURL)
   .then(response => response.json())
   .then(data => {
     rosterGrid.innerHTML = "";
@@ -24,6 +27,6 @@ fetch("https://raider.io/api/v1/guilds/profile?region=us&realm=whisperwind&name=
     });
   })
   .catch(error => {
-    rosterGrid.innerHTML = "Failed to load roster.";
+    rosterGrid.innerHTML = "Roster temporarily unavailable.";
     console.error(error);
   });

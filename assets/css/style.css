@@ -112,3 +112,35 @@ body::before {
     opacity:0.05;
     z-index:-1;
 }
+/* ===== Discord Section ===== */
+
+.discord-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #0b1224, #070b14);
+}
+
+.discord-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1f4fff;
+}
+
+.discord-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #5865F2;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);
+}
+
+.discord-button:hover {
+    background: #4752c4;
+    box-shadow: 0 0 25px rgba(88, 101, 242, 0.8);
+}

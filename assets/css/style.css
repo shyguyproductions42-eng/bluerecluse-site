@@ -1,57 +1,49 @@
-/* ===== Base Reset ===== */
+/* ===== Global Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
- body {
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle at top, #0b1225, #050914);
+    background: radial-gradient(circle at top, #0b1225 0%, #050914 70%);
     color: #ffffff;
-    font-size: 20px; 
+    font-size: 18px;
     line-height: 1.6;
 }
-}
 
-/* ===== Hero Section ===== */
+/* ===== Hero ===== */
+
 .hero {
-    width: 100%;
     text-align: center;
-    padding: 120px 20px;
-    background: radial-gradient(circle at center, #12203a 0%, #070b14 70%);
-}
-
-.hero-spider {
-    width: 180px;
-    margin-bottom: 30px;
-    filter: drop-shadow(0 0 25px #1f4fff);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 80px 20px 40px 20px;
 }
 
 .hero-wordmark {
-    width: 500px;
+    width: 320px;
     max-width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tagline {
-    margin-top: 20px;
-    letter-spacing: 2px;
+    margin-top: 15px;
     color: #1f4fff;
-    text-align: center;
+    letter-spacing: 3px;
 }
 
 /* ===== Navigation ===== */
+
 nav {
     text-align: center;
-    padding: 15px;
-    background: #111827;
+    padding: 20px 0;
+    background: rgba(0,0,0,0.3);
 }
 
 nav a {
-    color: #e0e1dd;
     margin: 0 20px;
     text-decoration: none;
+    color: #ffffff;
     font-weight: bold;
     transition: 0.3s ease;
 }
@@ -60,118 +52,24 @@ nav a:hover {
     color: #1f4fff;
 }
 
-/* ===== Sections ===== */
+/* ===== Glass Panel System ===== */
+
 .section {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-/* ===== Roster Cards ===== */
-.roster-grid {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #141a2b;
-    padding: 30px;
-    border: 1px solid #1f4fff;
-    border-radius: 8px;
-    flex: 1;
-    min-width: 250px;
-}
-
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #0a0f1f;
-}
-
-/* ===== Subtle Street Texture ===== */
-body::before {
-    content: "";
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    opacity:0.05;
-    z-index:-1;
-}
-body::before {
-    content: "";
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    opacity:0.05;
-    z-index:-1;
-}
-/* ===== Discord Section ===== */
-
-.discord-section {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to bottom, #0b1224, #070b14);
-}
-
-.discord-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #1f4fff;
-}
-
-.discord-button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 40px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background: #1f4fff;
-    border-radius: 6px;
-    transition: 0.3s ease;
-    box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);
-}
-
-.discord-button:hover {
-    background: #4752c4;
-    box-shadow: 0 0 25px rgba(88, 101, 242, 0.8);
-}
-.roster-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.card {
-    background: #141a2b;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #1f4fff;
-    transition: 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #5865F2;
-}
-/* ===== About Page Styling ===== */
-
-.about-section {
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    background: rgba(15, 20, 35, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(31, 79, 255, 0.25);
+    border-radius: 14px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(31, 79, 255, 0.15);
     text-align: center;
 }
+
+/* ===== Titles ===== */
 
 .about-title {
     font-size: 32px;
@@ -198,57 +96,8 @@ body::before {
     letter-spacing: 3px;
     color: #1f4fff;
 }
-/* ===== Global Glass Panel System ===== */
 
-.section {
-    padding: 80px 40px;
-    max-width: 1100px;
-    margin: 80px auto;
-    background: rgba(15, 20, 35, 0.65);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(31, 79, 255, 0.25);
-    border-radius: 14px;
-    box-shadow: 
-        0 10px 40px rgba(0, 0, 0, 0.6),
-        0 0 40px rgba(31, 79, 255, 0.15);
-}
-
-/* Smooth hover elevation */
-.section:hover {
-    box-shadow: 
-        0 15px 50px rgba(0, 0, 0, 0.7),
-        0 0 50px rgba(31, 79, 255, 0.25);
-    transition: 0.3s ease;
-}
-
-/* Improve spacing between panels */
-.section + .section {
-    margin-top: 60px;
-}
-.hero {
-    position: relative;
-    z-index: 1;
-}
-/* ===== Media Button ===== */
-
-.media-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #1f4fff;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s ease;
-    box-shadow: 0 0 20px rgba(31,79,255,0.5);
-}
-
-.media-button:hover {
-    background: #1638c9;
-    box-shadow: 0 0 30px rgba(31,79,255,0.8);
-}
-/* ===== Media Buttons Layout ===== */
+/* ===== Media Buttons ===== */
 
 .media-buttons {
     margin-top: 40px;
@@ -258,7 +107,6 @@ body::before {
     flex-wrap: wrap;
 }
 
-/* Base Button */
 .media-button {
     padding: 15px 30px;
     color: #ffffff;
@@ -268,7 +116,6 @@ body::before {
     transition: 0.3s ease;
 }
 
-/* YouTube Button */
 .media-button.youtube {
     background: #1f4fff;
     box-shadow: 0 0 20px rgba(31,79,255,0.5);
@@ -279,7 +126,6 @@ body::before {
     box-shadow: 0 0 30px rgba(31,79,255,0.8);
 }
 
-/* Twitch Button */
 .media-button.twitch {
     background: #6441a5;
     box-shadow: 0 0 20px rgba(100,65,165,0.5);
@@ -288,4 +134,12 @@ body::before {
 .media-button.twitch:hover {
     background: #4b2e83;
     box-shadow: 0 0 30px rgba(100,65,165,0.8);
+}
+
+/* ===== Footer ===== */
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
 }

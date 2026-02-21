@@ -57,3 +57,17 @@ footer {
     padding: 40px;
     background: #0a0f1f;
 }
+.roster-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #141a2b;
+    padding: 30px;
+    border: 1px solid #1f4fff;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+}

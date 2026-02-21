@@ -1,1 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: #e0e1dd;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at center, #12203a 0%, #070b14 70%);
+}
+
+.hero-spider {
+    width: 180px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 25px #1f4fff);
+}
+
+.hero-wordmark {
+    width: 500px;
+    max-width: 90%;
+}
+
+.tagline {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #1f4fff;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background: #111827;
+}
+
+nav a {
+    color: #e0e1dd;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1f4fff;
+}
+
+.section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #0a0f1f;
+}
+.roster-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #141a2b;
+    padding: 30px;
+    border: 1px solid #1f4fff;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+}
 

@@ -64,3 +64,14 @@ footer {
     background: #0a0f1f;
     font-size: 14px;
 }
+body::before {
+    content: "";
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    opacity:0.05;
+    z-index:-1;
+}

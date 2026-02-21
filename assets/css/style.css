@@ -248,3 +248,44 @@ body::before {
     background: #1638c9;
     box-shadow: 0 0 30px rgba(31,79,255,0.8);
 }
+/* ===== Media Buttons Layout ===== */
+
+.media-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Base Button */
+.media-button {
+    padding: 15px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* YouTube Button */
+.media-button.youtube {
+    background: #1f4fff;
+    box-shadow: 0 0 20px rgba(31,79,255,0.5);
+}
+
+.media-button.youtube:hover {
+    background: #1638c9;
+    box-shadow: 0 0 30px rgba(31,79,255,0.8);
+}
+
+/* Twitch Button */
+.media-button.twitch {
+    background: #6441a5;
+    box-shadow: 0 0 20px rgba(100,65,165,0.5);
+}
+
+.media-button.twitch:hover {
+    background: #4b2e83;
+    box-shadow: 0 0 30px rgba(100,65,165,0.8);
+}

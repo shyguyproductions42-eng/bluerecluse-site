@@ -228,3 +228,21 @@ body::before {
     position: relative;
     z-index: 1;
 }
+/* ===== Media Button ===== */
+
+.media-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #1f4fff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(31,79,255,0.5);
+}
+
+.media-button:hover {
+    background: #1638c9;
+    box-shadow: 0 0 30px rgba(31,79,255,0.8);
+}

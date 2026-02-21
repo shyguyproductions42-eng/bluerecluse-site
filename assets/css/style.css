@@ -16,8 +16,9 @@ body {
   position: relative;
 }
 
+
 /* =========================
-   PREMIUM WEB OVERLAY
+   WEB OVERLAY
 ========================= */
 
 body::before {
@@ -25,32 +26,24 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background: url("../web-overlay.png") no-repeat;
-  background-size: cover;
-  opacity: 0.08;
-  z-index: 0;
-}
 
-/* Faint shimmer animation */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    rgba(60,120,255,0.06) 50%,
-    transparent 100%
-  );
-  background-size: 200% 200%;
-  animation: shimmer 8s infinite linear;
+  background-image: url("../web-overlay.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.18; /* temporarily stronger so we can see it */
+
   z-index: 1;
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+/* Make sure content sits above overlay */
+.hero,
+nav,
+.section,
+footer {
+  position: relative;
+  z-index: 2;
 }
 
 /* =========================

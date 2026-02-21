@@ -152,3 +152,47 @@ footer {
     padding: 40px 0;
     color: #888;
 }
+    /* =========================
+   PREMIUM WEB OVERLAY
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../web-overlay.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+
+    /* soft blue glow */
+    filter: drop-shadow(0 0 25px rgba(37, 99, 235, 0.35));
+
+    /* shimmer animation */
+    animation: webShimmer 18s ease-in-out infinite;
+}
+
+/* Ensure content sits above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Shimmer Animation */
+@keyframes webShimmer {
+    0% {
+        opacity: 0.08;
+        filter: drop-shadow(0 0 15px rgba(37, 99, 235, 0.25));
+    }
+    50% {
+        opacity: 0.14;
+        filter: drop-shadow(0 0 35px rgba(59, 130, 246, 0.55));
+    }
+    100% {
+        opacity: 0.08;
+        filter: drop-shadow(0 0 15px rgba(37, 99, 235, 0.25));
+    }
+}

@@ -224,3 +224,7 @@ body::before {
 .section + .section {
     margin-top: 60px;
 }
+.hero {
+    position: relative;
+    z-index: 1;
+}
